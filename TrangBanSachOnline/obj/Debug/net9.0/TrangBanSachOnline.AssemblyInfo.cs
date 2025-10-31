@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrangBanSachOnline")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d705fd5c4ea5f864e207a2b0dd12442236a715a")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrangBanSachOnline")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrangBanSachOnline")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
