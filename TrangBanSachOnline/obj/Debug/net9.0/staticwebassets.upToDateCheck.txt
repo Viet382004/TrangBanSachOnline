@@ -1,6 +1,5 @@
-wwwroot\css\site.css
+wwwroot\css\bootstrap.min.css
 wwwroot\favicon.ico
-wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -61,9 +60,7 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-D:\Đồ án chuyên nghành - HTTTT\TrangBanSachOnline\TrangBanSachOnline\wwwroot\css\site.css
 D:\Đồ án chuyên nghành - HTTTT\TrangBanSachOnline\TrangBanSachOnline\wwwroot\favicon.ico
-D:\Đồ án chuyên nghành - HTTTT\TrangBanSachOnline\TrangBanSachOnline\wwwroot\js\site.js
 D:\Đồ án chuyên nghành - HTTTT\TrangBanSachOnline\TrangBanSachOnline\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 D:\Đồ án chuyên nghành - HTTTT\TrangBanSachOnline\TrangBanSachOnline\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 D:\Đồ án chuyên nghành - HTTTT\TrangBanSachOnline\TrangBanSachOnline\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -123,3 +120,4 @@ D:\Đồ án chuyên nghành - HTTTT\TrangBanSachOnline\TrangBanSachOnline\wwwro
 D:\Đồ án chuyên nghành - HTTTT\TrangBanSachOnline\TrangBanSachOnline\wwwroot\lib\jquery\dist\jquery.slim.min.js
 D:\Đồ án chuyên nghành - HTTTT\TrangBanSachOnline\TrangBanSachOnline\wwwroot\lib\jquery\dist\jquery.slim.min.map
 D:\Đồ án chuyên nghành - HTTTT\TrangBanSachOnline\TrangBanSachOnline\wwwroot\lib\jquery\LICENSE.txt
+D:\Đồ án chuyên nghành - HTTTT\TrangBanSachOnline\TrangBanSachOnline\wwwroot\css\bootstrap.min.css

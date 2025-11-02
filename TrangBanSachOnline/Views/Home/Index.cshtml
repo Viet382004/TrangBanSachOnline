@@ -2,7 +2,49 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="my-2">
+
+    <!-- Form tìm kiếm -->
+    <form class="row row-cols-lg-auto g-3 align-items-center  mb-4">
+
+
+        <div class="col-12">
+            <label class="visually-hidden" for="inlineFormSelectPref">Thể loại</label>
+            <select class="form-select" id="inlineFormSelectPref">
+                <option selected>Chọn thể loại</option>
+                <option value="1">Hành động</option>
+                <option value="2">Tiểu thuyết</option>
+                <option value="3">Trinh thám</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <label class="visually-hidden" for="inlineFormInputGroupUsername">Tìm kiếm bởi tên</label>
+            <div class="input-group">
+                <div class="input-group-text"></div>
+                <input type="text" class="form-control" id="" placeholder="Tìm kiếm bới tên">
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+        </div>
+    </form>
+
+    <!-- Danh sách sách -->
+    <div class="w-100 d-flex flex-wrap ">
+        @for (int i = 1; i <= 9; i++)
+        {
+            <div class="card mx-2 mb-4 shadow-sm" style="width: 16rem;">
+                <img src="https://via.placeholder.com/256x180?text=Book+@i" class="card-img-top" alt="Book @i" />
+                <div class="card-body">
+                    <h5 class="card-title">Book title @i</h5>
+                    <p class="card-text">
+                        <strong>Mô tả:</strong> Sách mẫu số @i <br />
+                        <strong>Giá:</strong> 100.000₫
+                    </p>
+                    <a href="#" class="btn btn-primary w-100">Thêm vào giỏ hàng</a>
+                </div>
+            </div>
+        }
+    </div>
+
 </div>

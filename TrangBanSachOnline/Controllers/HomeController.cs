@@ -1,7 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using TrangBanSachOnline.Models;
 
-namespace TrangBanSachOnline.Models
+namespace TrangBanSachOnline.Controllers
 {
     public class HomeController : Controller
     {

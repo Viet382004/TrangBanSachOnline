@@ -1,35 +1,61 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Threading.Tasks;
-using TrangBanSachOnline.Constants;
 
 namespace TrangBanSachOnline.Data
 {
-    public class DbSeeder
+    public static class DbSeeder
     {
-        public static async Task SeedDefaultData(IServiceProvider service)
+        public static async Task SeedDefaultData(IServiceProvider serviceProvider)
         {
-            var userMgr = service.GetService<UserManager<IdentityUser>>();
-            var roleMgr = service.GetService<RoleManager<IdentityRole>>();
+            var userManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
+            var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
-            // adding some roles to db
-            await roleMgr.CreateAsync(new IdentityRole(Roles.Admin.ToString()));
-            await roleMgr.CreateAsync(new IdentityRole(Roles.User.ToString()));
-
-            //create admin  user
-            var admin = new IdentityUser
+            // Tạo role
+            string[] roleNames = { "Admin", "Customer" };
+            foreach (var roleName in roleNames)
             {
-                UserName = "admin123",
-                Email = "admin@gmail.com",
-                EmailConfirmed = true,
-            };
-
-            var userInDb = await userMgr.FindByEmailAsync(admin.Email);
-            if (userInDb == null)
-            {
-                await userMgr.CreateAsync(admin,"Admin@123");
-                await userMgr.AddToRoleAsync(admin,Roles.Admin.ToString());
+                if (!await roleManager.RoleExistsAsync(roleName))
+                {
+                    await roleManager.CreateAsync(new IdentityRole(roleName));
+                }
             }
-        
+
+            // Tạo user admin
+            var adminEmail = "admin@gmail.com";
+            var adminPassword = "Admin@123";
+            var adminUser = await userManager.FindByEmailAsync(adminEmail);
+
+            if (adminUser == null)
+            {
+                adminUser = new IdentityUser
+                {
+                    UserName = adminEmail,
+                    Email = adminEmail,
+                    EmailConfirmed = true,
+                    LockoutEnabled = false
+                };
+
+                var result = await userManager.CreateAsync(adminUser, adminPassword);
+
+                if (result.Succeeded)
+                {
+                    await userManager.AddToRoleAsync(adminUser, "Admin");
+                    Console.WriteLine("Tạo tài khoản Admin thành công !");
+                }
+                else
+                {
+                    foreach (var error in result.Errors)
+                    {
+                        Console.WriteLine($" {error.Description}");
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Tài khoản Admin đã tồn tại.");
+            }
         }
     }
 }
