@@ -1,27 +1,32 @@
-﻿@{
+﻿@model BookDisplayModel
+ 
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="my-2">
 
     <!-- Form tìm kiếm -->
-    <form class="row row-cols-lg-auto g-3 align-items-center  mb-4">
+    <form asp-action="Index" class="row row-cols-lg-auto g-3 align-items-center  mb-4">
 
 
         <div class="col-12">
-            <label class="visually-hidden" for="inlineFormSelectPref">Thể loại</label>
-            <select class="form-select" id="inlineFormSelectPref">
+            <label class="visually-hidden" for="genreId">Thể loại</label>
+            <select class="form-select" id="genreId" name="genreId">
                 <option selected>Chọn thể loại</option>
-                <option value="1">Hành động</option>
-                <option value="2">Tiểu thuyết</option>
-                <option value="3">Trinh thám</option>
+                @foreach (var genre in Model.Genres)
+                {
+                    <option selected="@(genre.Id == Model.GenreId)" value="@genre.Id">@genre.GenreName</option>
+
+                }
+
             </select>
         </div>
         <div class="col-12">
-            <label class="visually-hidden" for="inlineFormInputGroupUsername">Tìm kiếm bởi tên</label>
+            <label class="visually-hidden" for="sTerm">Tìm kiếm bởi tên</label>
             <div class="input-group">
                 <div class="input-group-text"></div>
-                <input type="text" class="form-control" id="" placeholder="Tìm kiếm bới tên">
+                <input type="text" class="form-control" value="@Model.STerm" id="sTerm" name="sTerm" placeholder="Tìm kiếm bới tên">
             </div>
         </div>
         <div class="col-12">
@@ -31,15 +36,24 @@
 
     <!-- Danh sách sách -->
     <div class="w-100 d-flex flex-wrap ">
-        @for (int i = 1; i <= 9; i++)
+        @foreach (var book in Model.Books)
         {
             <div class="card mx-2 mb-4 shadow-sm" style="width: 16rem;">
-                <img src="https://via.placeholder.com/256x180?text=Book+@i" class="card-img-top" alt="Book @i" />
+                @if (string.IsNullOrEmpty(book.Image))
+                {
+                    <img src="https://via.placeholder.com/256x180?text=No+Image" class="card-img-top" alt="No Image" />
+                }
+                else
+                {
+                    <img src="/Images/@book.Image" class="card-img-top" alt="@book.BookName" />
+                }
                 <div class="card-body">
-                    <h5 class="card-title">Book title @i</h5>
+                    <h5 class="card-title">@book.BookName</h5>
                     <p class="card-text">
-                        <strong>Mô tả:</strong> Sách mẫu số @i <br />
-                        <strong>Giá:</strong> 100.000₫
+                        <strong>Thể loại:</strong>@book.GenreName <br />
+                        <strong>Tác giả:</strong> @book.AuthorName<br />
+                        <strong>Giá:</strong> @book.Price.ToString("C0")
+
                     </p>
                     <a href="#" class="btn btn-primary w-100">Thêm vào giỏ hàng</a>
                 </div>

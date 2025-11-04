@@ -14,6 +14,10 @@ namespace TrangBanSachOnline.Models
         [MaxLength(100)]
         public string? BookName { get; set; }
         [Required]
+        [MaxLength(40)]
+        public string? AuthorName { get; set; }
+
+        [Required]
         public double Price { get; set; }
         public string? Image { get; set; }
         [Required]
@@ -21,5 +25,8 @@ namespace TrangBanSachOnline.Models
         public Genre? Genre { get; set; }
         public List<OderDetail>? OderDetail { get; set; }
         public List<CartDetail>? CartDetail { get; set; }
+
+        [NotMapped]
+        public string ? GenreName { get; set; }
     }
 }

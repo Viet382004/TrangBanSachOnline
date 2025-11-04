@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting;
+using TrangBanSachOnline;
 using TrangBanSachOnline.Data;
 
 internal class Program
@@ -20,7 +22,7 @@ internal class Program
             .AddDefaultTokenProviders()
             ;
         builder.Services.AddControllersWithViews();
-
+        builder.Services.AddTransient<iHomeRepository, HomeRepository>();
         var app = builder.Build();
         using (var scope = app.Services.CreateScope())
         {
