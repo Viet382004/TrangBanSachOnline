@@ -10,8 +10,11 @@ namespace TrangBanSachOnline.Repositories
     public class HomeRepository : iHomeRepository
     {
         public readonly ApplicationDbContext _db;
+        public string STerm { get; set; }
+        public int GenreId { get; set; }
         public HomeRepository(ApplicationDbContext db)
         {
+
             _db = db;
         }
         public async Task<IEnumerable<Genre>> Genres()
@@ -24,7 +27,7 @@ namespace TrangBanSachOnline.Repositories
             sTerm = sTerm.ToLower();
             IEnumerable<Book> books = await (from b in _db.Books
                          join g in _db.Genres on b.GenreId equals g.Id
-                         where string.IsNullOrEmpty(sTerm) || (b != null && b.BookName.ToLower().StartsWith(sTerm))
+                         where string.IsNullOrEmpty(sTerm) || (b != null && b.BookName.ToLower().Contains(sTerm))
                          select new Book
                          {
                              Id = b.Id,

@@ -30,7 +30,7 @@ namespace TrangBanSachOnline.Controllers
                 STerm = sTerm,
                 GenreId = genreId
             };
-            return View(books);
+            return View(model);
         }
 
         public IActionResult Privacy()

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using TrangBanSachOnline;
 using TrangBanSachOnline.Data;
+using TrangBanSachOnline.Repositories;
 
 internal class Program
 {
@@ -23,6 +24,7 @@ internal class Program
             ;
         builder.Services.AddControllersWithViews();
         builder.Services.AddTransient<iHomeRepository, HomeRepository>();
+        builder.Services.AddTransient<ICartRepository, CartRepository>();
         var app = builder.Build();
         using (var scope = app.Services.CreateScope())
         {
