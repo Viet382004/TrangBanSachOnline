@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using TrangBanSachOnline;
 using TrangBanSachOnline.Data;
@@ -23,12 +25,13 @@ internal class Program
             .AddDefaultTokenProviders()
             ;
         builder.Services.AddControllersWithViews();
+        builder.Services.AddHttpContextAccessor();
         builder.Services.AddTransient<iHomeRepository, HomeRepository>();
-        builder.Services.AddTransient<ICartRepository, CartRepository>();
+        builder.Services.AddScoped<ICartRepository, CartRepository>();
         var app = builder.Build();
         using (var scope = app.Services.CreateScope())
         {
-            await DbSeeder.SeedDefaultData(scope.ServiceProvider);
+            //await DbSeeder.SeedDefaultData(scope.ServiceProvider);
         }
 
         // Configure the HTTP request pipeline.

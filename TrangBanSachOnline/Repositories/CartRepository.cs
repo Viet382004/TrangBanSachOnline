@@ -22,9 +22,6 @@ namespace TrangBanSachOnline.Repositories
         }
         public async Task<int> AddItem(int bookId, int qty)
         {
-            // Lấy userId từ context
-            // Tạo giỏ hàng nếu chưa có
-            // Thêm sách vào giỏ hàng
             string userId = GetUserId();
             using var transaction = await _db.Database.BeginTransactionAsync();
             try
@@ -43,8 +40,6 @@ namespace TrangBanSachOnline.Repositories
                     };
                     _db.ShoppingCarts.Add(cart);
                 }
-                // Lưu thay đổi để có Id của giỏ hàng
-                // trước khi thêm mục giỏ hàng
                 await _db.SaveChangesAsync();
                 var cartItem = _db.CartDetails
                                   .FirstOrDefault(cd => cd.BookId == bookId && cd.ShoppingCartId == cart.Id);
@@ -68,17 +63,14 @@ namespace TrangBanSachOnline.Repositories
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine("Lỗi khi thêm sản phẩm: " + ex.Message);
+                throw;
             }
             var cartItemCount = await GetCartItemCount(userId);
             return cartItemCount;
         }
         public async Task<int> RemoveItem(int bookId)
         {
-            // Lấy userId từ context
-            // Tạo giỏ hàng nếu chưa có
-            // Thêm sách vào giỏ hàng
-            // using var transaction = await _db.Database.BeginTransactionAsync();
             string userId = GetUserId();
 
             try
@@ -114,7 +106,8 @@ namespace TrangBanSachOnline.Repositories
             }
             catch (Exception ex)
             {
-                //await transaction.RollbackAsync();
+                Console.WriteLine("Lỗi khi thêm sản phẩm: " + ex.Message);
+                throw;
             }
             var cartItemCount = await GetCartItemCount(userId);
             return cartItemCount;
@@ -142,10 +135,15 @@ namespace TrangBanSachOnline.Repositories
 
         public async Task<int> GetCartItemCount(string userId="")
         {
-            if(!string.IsNullOrEmpty(userId))
+            if(string.IsNullOrEmpty(userId))
             {
                 userId = GetUserId();
             }
+            if(string.IsNullOrEmpty(userId))
+            {
+                return 0;
+            }
+
             var data = await (from c in _db.ShoppingCarts
                                 join cd in _db.CartDetails 
                                 on c.Id equals cd.ShoppingCartId
@@ -156,10 +154,10 @@ namespace TrangBanSachOnline.Repositories
             return data.Count;
                                 
         }
-        private string GetUserId()
+        public string GetUserId()
         {
             var principal = _httpContextAccessor.HttpContext.User;
-            var userId = _userManager.GetUserId(principal);
+            string userId = _userManager.GetUserId(principal);
             return userId;
         }
 

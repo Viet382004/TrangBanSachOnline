@@ -1,5 +1,6 @@
 wwwroot\css\bootstrap.min.css
 wwwroot\favicon.ico
+wwwroot\Images\NoImage.png
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -60,7 +61,6 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\Images\NoImage.png
 D:\Đồ án chuyên nghành - HTTTT\TrangBanSachOnline\TrangBanSachOnline\wwwroot\lib\jquery\LICENSE.txt
 D:\Đồ án chuyên nghành - HTTTT\TrangBanSachOnline\TrangBanSachOnline\wwwroot\lib\jquery\dist\jquery.slim.min.map
 D:\Đồ án chuyên nghành - HTTTT\TrangBanSachOnline\TrangBanSachOnline\wwwroot\lib\jquery\dist\jquery.slim.min.js

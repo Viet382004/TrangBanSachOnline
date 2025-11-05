@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using NuGet.Configuration;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 
 namespace TrangBanSachOnline.Controllers
 {
@@ -16,22 +18,31 @@ namespace TrangBanSachOnline.Controllers
         {
             return View();
         }
-        public IActionResult AddItem(int bookId , int  qty = 1)
+        public async Task<IActionResult> AddItem(int bookId , int  qty = 1, int redirect =0)
         {
-
-            return View();
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Json(new { success = false, message = "Vui lòng đăng nhập để thêm sản phẩm." });
+            }
+            var cartCount =await _cartRepository.AddItem(bookId, qty);
+            if (redirect ==0)
+                return Json(cartCount);
+            return RedirectToAction("GetUserCart");
         }
-        public IActionResult RemoveItem(int bookId)
+        public async Task<IActionResult> RemoveItem(int bookId)
         {
-            return View();
+            var cartCount = await _cartRepository.RemoveItem(bookId);
+            return RedirectToAction("GetUserCart");
         }
-        public IActionResult GetUserCart()
+        public async Task<IActionResult> GetUserCart()
         {
-            return View();
+            var cart = await _cartRepository.GetUserCart();
+            return View(cart);
         }
-        public IActionResult GetTotalItemInCart(string userId)
+        public async Task<IActionResult> GetTotalItemInCart()
         {
-            return View();
+            var cartItem = _cartRepository.GetCartItemCount();
+            return Json(cartItem);
         }
     }
 }

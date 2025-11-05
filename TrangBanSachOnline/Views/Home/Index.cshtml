@@ -1,5 +1,5 @@
 ﻿@model BookDisplayModel
- 
+
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -58,10 +58,11 @@
                     <p class="card-text mb-3 flex-grow-1">
                         <b>Thể loại:</b> @book.GenreName <br>
                         <b>Tác giả:</b> @book.AuthorName<br>
-                        <b>Giá:</b> @book.Price.ToString("C0")
+                        <b>Giá:</b> @book.Price.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))
+
                     </p>
 
-                    <a href="#" class="btn btn-primary mt-auto w-100">Thêm vào giỏ hàng</a>
+                    <button type="button" onclick="add(@book.Id)" class="btn btn-primary mt-auto w-100">Thêm vào giỏ hàng</button>
                 </div>
             </div>
         }
@@ -69,3 +70,28 @@
 
 
 </div>
+
+@section Scripts{
+    <script>
+                async function add(bookId) {
+            try {
+                var response = await fetch(`/Cart/AddItem?bookId=${bookId}`, {
+                    method: 'POST',
+                    credentials: 'include'
+                });
+
+                if (response.status === 200) {
+                    var result = await response.json();
+                    console.log(result);
+                    var cartCountEl = document.getElementById("cartCount");
+                    cartCountEl.innerHTML = result;
+                } else {
+                    console.error("Server error:", response.status);
+                }
+            } catch (error) {
+                console.error('Lỗi khi thêm vào giỏ hàng:', error);
+            }
+        }
+
+    </script>
+}
