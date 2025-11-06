@@ -4,8 +4,8 @@ using System.Runtime.InteropServices;
 
 namespace TrangBanSachOnline.Models
 {
-    [Table("OderStatus")]
-    public class OderStatus
+    [Table("OrderStatus")]
+    public class OrderStatus
     {
         public int Id { get; set; }
         [Required]

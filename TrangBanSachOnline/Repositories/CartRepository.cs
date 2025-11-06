@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.SqlServer.Server;
+using System;
 using System.Diagnostics.Metrics;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Security.Principal;
 using TrangBanSachOnline.Models;
 
@@ -13,8 +16,8 @@ namespace TrangBanSachOnline.Repositories
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public CartRepository(ApplicationDbContext db, IHttpContextAccessor httpContextAccessor, 
-                              UserManager<IdentityUser> userManager)
+        public CartRepository(ApplicationDbContext db, IHttpContextAccessor httpContextAccessor,
+            UserManager<IdentityUser> userManager)
         {
             _db = db;
             _userManager = userManager;
@@ -23,91 +26,74 @@ namespace TrangBanSachOnline.Repositories
         public async Task<int> AddItem(int bookId, int qty)
         {
             string userId = GetUserId();
-            using var transaction = await _db.Database.BeginTransactionAsync();
+            using var transaction = _db.Database.BeginTransaction();
             try
             {
                 if (string.IsNullOrEmpty(userId))
-                {
-                    throw new Exception("Người dùng chưa đăng nhập!");
-                }
-
+                    throw new UnauthorizedAccessException("Người dùng chưa đăng nhập");
                 var cart = await GetCart(userId);
-                if (cart == null)
+                if (cart is null)
                 {
-                    cart = new ShoppingCart()
+                    cart = new ShoppingCart
                     {
-                        UserId = userId,
+                        UserId = userId
                     };
                     _db.ShoppingCarts.Add(cart);
                 }
-                await _db.SaveChangesAsync();
+                _db.SaveChanges();
+                // cart detail section
                 var cartItem = _db.CartDetails
-                                  .FirstOrDefault(cd => cd.BookId == bookId && cd.ShoppingCartId == cart.Id);
-                if (cartItem != null)
+                                  .FirstOrDefault(a => a.ShoppingCartId == cart.Id && a.BookId == bookId);
+                if (cartItem is not null)
                 {
                     cartItem.Quantity += qty;
-                    _db.CartDetails.Update(cartItem);
                 }
                 else
                 {
-                    cartItem = new CartDetail()
+                    var book = _db.Books.Find(bookId);
+                    cartItem = new CartDetail
                     {
                         BookId = bookId,
                         ShoppingCartId = cart.Id,
-                        Quantity = qty
+                        Quantity = qty,
+                        UnitPrice = book.Price // this is new line after update
                     };
                     _db.CartDetails.Add(cartItem);
                 }
-                await _db.SaveChangesAsync();
-                await transaction.CommitAsync();
+                _db.SaveChanges();
+                transaction.Commit();
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Lỗi khi thêm sản phẩm: " + ex.Message);
-                throw;
             }
             var cartItemCount = await GetCartItemCount(userId);
             return cartItemCount;
         }
         public async Task<int> RemoveItem(int bookId)
         {
+            //using var transaction = _db.Database.BeginTransaction();
             string userId = GetUserId();
-
             try
             {
                 if (string.IsNullOrEmpty(userId))
-                {
-                    throw new Exception("Người dùng chưa đăng nhập!");
-                }
+                    throw new UnauthorizedAccessException("Người dùng chưa đăng nhâp");
                 var cart = await GetCart(userId);
-                if (cart == null)
-                {
-                    throw new Exception("Giỏ hàng không hợp lệ!");
-                }
-                // Lưu thay đổi để có Id của giỏ hàng
-                // trước khi thêm mục giỏ hàng
-                await _db.SaveChangesAsync();
+                if (cart is null)
+                    throw new InvalidOperationException("Giỏ hàng không hợp lệ");
+                // cart detail section
                 var cartItem = _db.CartDetails
-                                  .FirstOrDefault(cd => cd.BookId == bookId && cd.ShoppingCartId == cart.Id);
-                if (cartItem == null)
-                {
-                    throw new Exception("Không có sản phẩm nào trong giỏ hàng!");
-                }
-                else if(cartItem.Quantity == 1)
-                {
+                                  .FirstOrDefault(a => a.ShoppingCartId == cart.Id && a.BookId == bookId);
+                if (cartItem is null)
+                    throw new InvalidOperationException("Không có sản phẩm nào trong giỏ hàng");
+                else if (cartItem.Quantity == 1)
                     _db.CartDetails.Remove(cartItem);
-                }
-                else 
-                {
-                    cartItem.Quantity -= 1;
-                }
-                await _db.SaveChangesAsync();
-                //await transaction.CommitAsync();
+                else
+                    cartItem.Quantity = cartItem.Quantity - 1;
+                _db.SaveChanges();
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Lỗi khi thêm sản phẩm: " + ex.Message);
-                throw;
+
             }
             var cartItemCount = await GetCartItemCount(userId);
             return cartItemCount;
@@ -117,7 +103,7 @@ namespace TrangBanSachOnline.Repositories
             var userId = GetUserId();
             if(userId == null)
             {
-                throw new Exception("User not found");
+                throw new Exception("Không tìm thấy người dùng");
             }
             var shoppingcart = await _db.ShoppingCarts
                                 .Include(c => c.CartDetails)
@@ -139,22 +125,64 @@ namespace TrangBanSachOnline.Repositories
             {
                 userId = GetUserId();
             }
-            if(string.IsNullOrEmpty(userId))
-            {
-                return 0;
-            }
 
             var data = await (from c in _db.ShoppingCarts
                                 join cd in _db.CartDetails 
                                 on c.Id equals cd.ShoppingCartId
-                                select new
-                                {
-                                    cd.Id,
-                                }).ToListAsync();
+                                where c.UserId == userId
+                              select new{ cd.Id,}
+                              ).ToListAsync();
             return data.Count;
                                 
         }
-        public string GetUserId()
+        public async Task<bool> DoCheckout()
+        {
+            var transaction = _db.Database.BeginTransaction();
+            try
+            {
+                var userId = GetUserId();
+                if (string.IsNullOrEmpty(userId))
+                    throw new Exception("Người dùng chưa đăng nhập");
+                var cart = await GetCart(userId);
+                if (cart is null)
+                    throw new Exception("Giỏ hàng không hợp lệ");
+                var cartDetails = _db.CartDetails
+                                     .Where(a => a.ShoppingCartId == cart.Id)
+                                     .ToList();
+                if (cartDetails.Count == 0)
+                    throw new Exception("Không có sản phẩm nào trong giỏ hàng");
+                var order = new Order
+                {
+                    UserId = userId,
+                    CreatedDate = DateTime.UtcNow,
+                    OderStatusId = 1, // Pending
+
+                };
+                _db.Orders.Add(order);
+                _db.SaveChanges();
+                foreach (var item in cartDetails)
+                {
+                    var orderDetail = new OrderDetail
+                    {
+                        OderId = order.Id,
+                        BookId = item.BookId,
+                        Quantity = item.Quantity,
+                        UnitPrice = item.UnitPrice
+                    };
+                    _db.OrderDetails.Add(orderDetail);
+                }
+                _db.SaveChanges();
+                _db.CartDetails.RemoveRange(cartDetails);
+                _db.SaveChanges();
+                transaction.Commit();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        private string GetUserId()
         {
             var principal = _httpContextAccessor.HttpContext.User;
             string userId = _userManager.GetUserId(principal);

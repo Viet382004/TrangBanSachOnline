@@ -10,10 +10,14 @@ namespace TrangBanSachOnline.Models
         public int Id { get; set; }
         [Required]
         public int ShoppingCartId { get; set; }
-        public ShoppingCart? ShoppingCart { get; set; }
+        public ShoppingCart ShoppingCart { get; set; }
         [Required]
         public int BookId { get; set; }
-        public Book? Book { get; set; }
+        public Book Book { get; set; }
+        [Required]
+
         public int Quantity { get; set; }
+        [Required]
+        public double UnitPrice { get; set; }
     }
 }

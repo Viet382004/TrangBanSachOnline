@@ -4,8 +4,8 @@ using System.Runtime.InteropServices;
 
 namespace TrangBanSachOnline.Models
 {
-    [Table("Oder")]
-    public class Oder
+    [Table("Order")]
+    public class Order
     {
         public int Id { get; set; }
         [Required]
@@ -14,9 +14,9 @@ namespace TrangBanSachOnline.Models
         [Required]
         public int OderStatusId { get; set; }
         public bool IsDeleted { get; set; } = false;
-        public OderStatus? OderStatus { get; set; }
+        public OrderStatus? OderStatus { get; set; }
         [Required]
-        public List<OderDetail> OderDetail { get; set; }
+        public List<OrderDetail> OderDetail { get; set; }
 
     }
 }

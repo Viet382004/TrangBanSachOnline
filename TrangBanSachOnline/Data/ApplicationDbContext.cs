@@ -12,9 +12,9 @@ namespace TrangBanSachOnline.Data
 
         public DbSet<TrangBanSachOnline.Models.Genre> Genres { get; set; }
         public DbSet<TrangBanSachOnline.Models.Book> Books { get; set; }
-        public DbSet<TrangBanSachOnline.Models.OderDetail> OderDetails { get; set; }
-        public DbSet<TrangBanSachOnline.Models.Oder> Oders { get; set; }
-        public DbSet<TrangBanSachOnline.Models.OderStatus> OderStatues { get; set; }
+        public DbSet<TrangBanSachOnline.Models.OrderDetail> OrderDetails { get; set; }
+        public DbSet<TrangBanSachOnline.Models.Order> Orders { get; set; }
+        public DbSet<TrangBanSachOnline.Models.OrderStatus> OrderStatues { get; set; }
         public DbSet<TrangBanSachOnline.Models.CartDetail> CartDetails { get; set;}
         public DbSet<TrangBanSachOnline.Models.ShoppingCart> ShoppingCarts { get; set;}
         

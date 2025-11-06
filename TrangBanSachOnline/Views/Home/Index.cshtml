@@ -1,7 +1,7 @@
 ﻿@model BookDisplayModel
 
 @{
-    ViewData["Title"] = "Home Page";
+
 }
 
 <div class="my-2">
@@ -41,7 +41,6 @@
         {
             <div class="card mx-3 mb-4 shadow-sm d-flex flex-column" style="width: 16rem;">
                 <div style="height: 250px; overflow: hidden;">
-                    <!-- Giữ tỷ lệ ảnh đồng đều -->
                     @if (string.IsNullOrEmpty(book.Image))
                     {
                         <img src="/Images/NoImage.png" class="card-img-top" alt="No Image">
@@ -71,27 +70,29 @@
 
 </div>
 
-@section Scripts{
+@section Scripts {
     <script>
-                async function add(bookId) {
+        async function add(bookId) {
+             var usernameEl = document.getElementById("username");
+        if(usernameEl==null){
+            window.location.href = "/Identity/Account/Login";
+          //var username=usernameEl.innerText;
+          //  if(username.length<1){
+          //      window.location.href="/Identity/Account/Login";
+          //  }
+        }
             try {
-                var response = await fetch(`/Cart/AddItem?bookId=${bookId}`, {
-                    method: 'POST',
-                    credentials: 'include'
-                });
-
-                if (response.status === 200) {
+                var response = await fetch(`/Cart/AddItem?bookId=${bookId}`);
+                if (response.status == 200) {
                     var result = await response.json();
-                    console.log(result);
                     var cartCountEl = document.getElementById("cartCount");
                     cartCountEl.innerHTML = result;
-                } else {
-                    console.error("Server error:", response.status);
+                    window.location.href = "#cartCount";
                 }
-            } catch (error) {
-                console.error('Lỗi khi thêm vào giỏ hàng:', error);
+            }
+            catch (err) {
+                console.log(err);
             }
         }
-
     </script>
 }

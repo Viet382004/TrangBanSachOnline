@@ -23,7 +23,7 @@ namespace TrangBanSachOnline.Models
         [Required]
         public int GenreId { get; set; }
         public Genre? Genre { get; set; }
-        public List<OderDetail>? OderDetail { get; set; }
+        public List<OrderDetail>? OderDetail { get; set; }
         public List<CartDetail>? CartDetail { get; set; }
 
         [NotMapped]

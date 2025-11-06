@@ -1,58 +1,85 @@
 ﻿@model ShoppingCart
 @{
-    ViewData["Title"] = "GetUserCart";
+    ViewData["Title"] = "Giỏ hàng của bạn";
 }
 
-<div style="width=90%; margin=auto">
-    <h2>Giỏ hàng của bạn</h2>
-@if (Model != null &&Model.CartDetails!=null && Model.CartDetails.Count >0)
-    {
-        <table class="table table-striped">
-            <tr>
-                <th>Sản phẩm</th>
-                <th>Ảnh</th>
-                <th>Thể loại</th>
-                <th>Giá</th>
-                <th>Tổng tiền</th>
-                <th>Hành động</th>
-            </tr>
-            @foreach (var item in Model.CartDetails)
-            {
-                <tr>
-                    <td>@item.Book.BookName</td>
-                    <td>
-                        @if (!string.IsNullOrEmpty(@item.Book.Image))
-                        {
-                            <img src="/Images/NoImage.png"  width="80" height="100" />
+<div class="container-fluid my-5" style="width: 95%; margin: auto;">
+    <div class="py-3">
+        <h3 class="text-center mb-4">
+            <b class="bi bi-cart"> Giỏ hàng của bạn</b>
+        </h3>
+        </br>@if (Model != null && Model.CartDetails != null && Model.CartDetails.Count > 0)
+        {
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle text-center">
+                    <thead class="table-light">
+                        <tr>
+                            <th>STT</th>
+                            <th>Sản phẩm</th>
+                            <th>Ảnh</th>
+                            <th>Thể loại</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int stt = 1;
                         }
-                        else
+                        @foreach (var item in Model.CartDetails)
                         {
-                            <img src="/Images/@item.Book.Image" width="80" height="100" />
+                            <tr>
+                                <td>@stt</td>
+                                <td class="fw-semibold">@item.Book.BookName</td>
+                                <td>
+                                    @if (string.IsNullOrEmpty(item.Book.Image))
+                                    {
+                                        <img src="/Images/NoImage.png" width="80" height="100" class="rounded shadow-sm" />
+                                    }
+                                    else
+                                    {
+                                        <img src="/Images/@item.Book.Image" width="80" height="100" class="rounded shadow-sm" />
+                                    }
+                                </td>
+                                <td>@item.Book.Genre.GenreName</td>
+                                <td>@String.Format("{0:N0}", item.Book.Price) ₫</td>
+                                <td>@item.Quantity</td>
+                                <td class="fw-bold text-success">@String.Format("{0:N0}", item.Book.Price * item.Quantity) ₫</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <a class="btn btn-outline-success btn-sm px-3 fw-bold" href="/Cart/AddItem?bookId=@item.BookId&&redirect=1">+</a>
+                                        <a class="btn btn-outline-danger btn-sm px-3 fw-bold" href="/Cart/RemoveItem?bookId=@item.BookId">-</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            stt++;
+                        }
+                    </tbody>
+                </table>
+            </div>
 
-                        }
-                    </td>
-                    <td>@item.Book.Genre.GenreName</td>
-                    <td>@item.Book.Price X @item.Quantity</td>
-                    <td>@(item.Book.Price* item.Quantity)</td>
-                    <td>
-                        <a class="btn btn-info" href="/Cart/AddItem?bookId=@item.BookId&&redirect=1">+</a>
-                        <a class="btn btn-info" href="/Cart/RemoveItem?bookId=@item.BookId">-</a>
-                    </td>
-                </tr>
-            }
-        </table>
-        <div class="my-2">
-            <h5>Tổng tiền (VND):</h5>
-            @(Model.CartDetails.Sum(cd => cd.Book.Price * cd.Quantity))
-        </div>
-        <div class="my-2">
-            <a class="btn btn-primary" href="#">Thanh Toán</a>
-        </div>
-    }
-    else
-    {
-        <h5>Bạn không có sản phẩm nào trong giỏ hàng</h5>
-    }
-}
+            <div class="d-flex justify-content-between align-items-center mt-4">
+                <h5 class="text-end mb-0">
+                    <strong>Tổng tiền (VND):</strong>
+                    <span class="text-danger fw-bold">
+                        @String.Format("{0:N0}", Model.CartDetails.Sum(cd => cd.Book.Price * cd.Quantity)) ₫
+                    </span>
+                </h5>
+                <a class="btn btn-success btn-lg px-4 shadow-sm" href="/Cart/Checkout">
+                    <i class="bi bi-credit-card"></i> Thanh Toán
+                </a>
+            </div>
+            
+        }
+        else
+        {
+            <div class="text-center py-5">
+                <img src="/Images/Empty_Cart.jpg" width="150" class="mb-3" />
+                <h5 class="text-muted">Bạn không có sản phẩm nào trong giỏ hàng.</h5>
+                <a href="/Home/Index" class="btn btn-primary mt-3">Tiếp tục mua sắm</a>
+            </div>
+        }
+    </div>
 </div>
-

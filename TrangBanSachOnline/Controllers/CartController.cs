@@ -1,48 +1,62 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using NuGet.Configuration;
-using System.Runtime.InteropServices;
-using System.Threading.Tasks;
+using Microsoft.CodeAnalysis.Elfie.Serialization;
 
-namespace TrangBanSachOnline.Controllers
+namespace BookShoppingCartMvcUI.Controllers
 {
+    [Authorize]
     public class CartController : Controller
     {
-        private readonly ICartRepository _cartRepository;
+        private readonly ICartRepository _cartRepo;
 
-        public CartController(ICartRepository cartRepository)
+        public CartController(ICartRepository cartRepo)
         {
-            _cartRepository = cartRepository;
+            _cartRepo = cartRepo;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> AddItem(int bookId, int qty = 1, int redirect = 0)
         {
-            return View();
-        }
-        public async Task<IActionResult> AddItem(int bookId , int  qty = 1, int redirect =0)
-        {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Json(new { success = false, message = "Vui lòng đăng nhập để thêm sản phẩm." });
-            }
-            var cartCount =await _cartRepository.AddItem(bookId, qty);
-            if (redirect ==0)
-                return Json(cartCount);
+            var cartCount = await _cartRepo.AddItem(bookId, qty);
+            if (redirect == 0)
+                return Ok(cartCount);
             return RedirectToAction("GetUserCart");
         }
+
         public async Task<IActionResult> RemoveItem(int bookId)
         {
-            var cartCount = await _cartRepository.RemoveItem(bookId);
+            var cartCount = await _cartRepo.RemoveItem(bookId);
             return RedirectToAction("GetUserCart");
         }
         public async Task<IActionResult> GetUserCart()
         {
-            var cart = await _cartRepository.GetUserCart();
+            var cart = await _cartRepo.GetUserCart();
             return View(cart);
         }
+
         public async Task<IActionResult> GetTotalItemInCart()
         {
-            var cartItem = _cartRepository.GetCartItemCount();
-            return Json(cartItem);
+            int cartItem = await _cartRepo.GetCartItemCount();
+            return Ok(cartItem);
         }
+
+        public async Task<IActionResult> Checkout()
+        {
+            var checkoutResult = await _cartRepo.DoCheckout();
+            if(!checkoutResult)
+            {
+                throw new Exception("Thanh toán không thành công");
+            }
+            return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult OrderSuccess()
+        {
+            return View();
+        }
+
+        public IActionResult OrderFailure()
+        {
+            return View();
+        }
+
     }
 }
