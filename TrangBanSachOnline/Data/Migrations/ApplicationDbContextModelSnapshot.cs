@@ -301,7 +301,7 @@ namespace TrangBanSachOnline.Data.Migrations
                     b.ToTable("Genre");
                 });
 
-            modelBuilder.Entity("TrangBanSachOnline.Models.Oder", b =>
+            modelBuilder.Entity("TrangBanSachOnline.Models.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -309,14 +309,40 @@ namespace TrangBanSachOnline.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsPaid")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
                     b.Property<int>("OderStatusId")
                         .HasColumnType("int");
+
+                    b.Property<string>("PaymentMethod")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserId")
                         .IsRequired()
@@ -329,7 +355,7 @@ namespace TrangBanSachOnline.Data.Migrations
                     b.ToTable("Order");
                 });
 
-            modelBuilder.Entity("TrangBanSachOnline.Models.OderDetail", b =>
+            modelBuilder.Entity("TrangBanSachOnline.Models.OrderDetail", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -358,7 +384,7 @@ namespace TrangBanSachOnline.Data.Migrations
                     b.ToTable("OrderDetail");
                 });
 
-            modelBuilder.Entity("TrangBanSachOnline.Models.OderStatus", b =>
+            modelBuilder.Entity("TrangBanSachOnline.Models.OrderStatus", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -397,6 +423,28 @@ namespace TrangBanSachOnline.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ShoppingCart");
+                });
+
+            modelBuilder.Entity("TrangBanSachOnline.Models.Stock", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookId")
+                        .IsUnique();
+
+                    b.ToTable("Stock");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -480,9 +528,9 @@ namespace TrangBanSachOnline.Data.Migrations
                     b.Navigation("ShoppingCart");
                 });
 
-            modelBuilder.Entity("TrangBanSachOnline.Models.Oder", b =>
+            modelBuilder.Entity("TrangBanSachOnline.Models.Order", b =>
                 {
-                    b.HasOne("TrangBanSachOnline.Models.OderStatus", "OderStatus")
+                    b.HasOne("TrangBanSachOnline.Models.OrderStatus", "OderStatus")
                         .WithMany()
                         .HasForeignKey("OderStatusId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -491,7 +539,7 @@ namespace TrangBanSachOnline.Data.Migrations
                     b.Navigation("OderStatus");
                 });
 
-            modelBuilder.Entity("TrangBanSachOnline.Models.OderDetail", b =>
+            modelBuilder.Entity("TrangBanSachOnline.Models.OrderDetail", b =>
                 {
                     b.HasOne("TrangBanSachOnline.Models.Book", "Book")
                         .WithMany("OderDetail")
@@ -499,7 +547,7 @@ namespace TrangBanSachOnline.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TrangBanSachOnline.Models.Oder", "Oder")
+                    b.HasOne("TrangBanSachOnline.Models.Order", "Oder")
                         .WithMany("OderDetail")
                         .HasForeignKey("OderId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -510,11 +558,24 @@ namespace TrangBanSachOnline.Data.Migrations
                     b.Navigation("Oder");
                 });
 
+            modelBuilder.Entity("TrangBanSachOnline.Models.Stock", b =>
+                {
+                    b.HasOne("TrangBanSachOnline.Models.Book", "Book")
+                        .WithOne("Stock")
+                        .HasForeignKey("TrangBanSachOnline.Models.Stock", "BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+                });
+
             modelBuilder.Entity("TrangBanSachOnline.Models.Book", b =>
                 {
                     b.Navigation("CartDetail");
 
                     b.Navigation("OderDetail");
+
+                    b.Navigation("Stock");
                 });
 
             modelBuilder.Entity("TrangBanSachOnline.Models.Genre", b =>
@@ -522,7 +583,7 @@ namespace TrangBanSachOnline.Data.Migrations
                     b.Navigation("Book");
                 });
 
-            modelBuilder.Entity("TrangBanSachOnline.Models.Oder", b =>
+            modelBuilder.Entity("TrangBanSachOnline.Models.Order", b =>
                 {
                     b.Navigation("OderDetail");
                 });

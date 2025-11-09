@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.Elfie.Serialization;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
+using TrangBanSachOnline.Models;
+using static NuGet.Packaging.PackagingConstants;
 
 namespace BookShoppingCartMvcUI.Controllers
 {
@@ -37,15 +41,21 @@ namespace BookShoppingCartMvcUI.Controllers
             int cartItem = await _cartRepo.GetCartItemCount();
             return Ok(cartItem);
         }
-
-        public async Task<IActionResult> Checkout()
+        public IActionResult Checkout()
         {
-            var checkoutResult = await _cartRepo.DoCheckout();
-            if(!checkoutResult)
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Checkout(CheckoutModel model)
+        {
+            if (!ModelState.IsValid)
             {
-                throw new Exception("Thanh toán không thành công");
+                return View(model);
             }
-            return RedirectToAction("Index", "Home");
+            bool checkoutResult = await _cartRepo.DoCheckout(model);
+            if (!checkoutResult)
+                return RedirectToAction(nameof(OrderFailure));
+            return RedirectToAction(nameof(OrderSuccess));
         }
 
         public IActionResult OrderSuccess()

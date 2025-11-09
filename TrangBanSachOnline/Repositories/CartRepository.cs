@@ -135,7 +135,7 @@ namespace TrangBanSachOnline.Repositories
             return data.Count;
                                 
         }
-        public async Task<bool> DoCheckout()
+        public async Task<bool> DoCheckout(CheckoutModel model)
         {
             var transaction = _db.Database.BeginTransaction();
             try
@@ -151,11 +151,20 @@ namespace TrangBanSachOnline.Repositories
                                      .ToList();
                 if (cartDetails.Count == 0)
                     throw new Exception("Không có sản phẩm nào trong giỏ hàng");
+                var pendingRecord = _db.OrderStatues.FirstOrDefault(os => os.StatusName.ToLower() == "Đang chờ xử lý");
+                if (pendingRecord is null)
+                    throw new Exception("Trạng thái đơn hàng không hợp lệ");
                 var order = new Order
                 {
                     UserId = userId,
                     CreatedDate = DateTime.UtcNow,
-                    OderStatusId = 1, // Pending
+                    Name = model.Name,
+                    Email = model.Email,
+                    PhoneNumber = model.PhoneNumber,
+                    Address = model.Address,
+                    PaymentMethod = model.PaymentMethod,
+                    IsPaid = false,
+                    OderStatusId = pendingRecord.Id,
 
                 };
                 _db.Orders.Add(order);

@@ -2,3 +2,4 @@
 global using TrangBanSachOnline.Models.DTOs;
 global using TrangBanSachOnline.Data;
 global using TrangBanSachOnline.Repositories;
+global using TrangBanSachOnline.Constants;

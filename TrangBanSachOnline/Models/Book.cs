@@ -25,6 +25,7 @@ namespace TrangBanSachOnline.Models
         public Genre? Genre { get; set; }
         public List<OrderDetail>? OderDetail { get; set; }
         public List<CartDetail>? CartDetail { get; set; }
+        public Stock? Stock { get; set; }
 
         [NotMapped]
         public string ? GenreName { get; set; }

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Order>
+@{
+    // Layout = "_AdminLayout";
+    ViewData["Title"] = "AllOrders";
+}
+<div style="width:100%" class="mt-2">
+    <h4>Đơn hàng</h4>
+    @if (Model != null && Model.Count() > 0)
+    {
+        <table class="table table-striped">
+            <tr>
+                <th>Ngày đặt đơn</th>
+                <th>Tên</th>
+                <th>Email</th>
+                <th>Số điện thoại</th>
+                <th>Địa chỉ</th>
+                <th>Phương thức thanh toán</th>
+                <th>Trạng thái đơn hàng</th>
+                <th>Hành động</th>
+
+            </tr>
+            @foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.CreatedDate.ToString("dd-MM-yyyy")</td>
+                    <td>@order.Name</td>
+                    <td>@order.PhoneNumber</td>
+                    <td>@order.Email</td>
+                    <td>@order.Address</td>
+                    <td>@order.PaymentMethod | @(order.IsPaid ? "Đã thanh toán" : "Chưa thanh toán")</td>
+                    <td>@order.OderStatus.StatusName</td>
+                    <td>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal-@order.Id" class="btn btn-primary">
+                            Chi tiết đơn hàng
+                        </button>
+                        <a asp-action="UpdateOrderStatus" asp-route-orderId="@order.Id" class="btn btn-info"> Cập nhật trạng thái</a>
+                        <a asp-action="TogglePaymentStatus" asp-route-orderId="@order.Id" class="btn btn-info">Xác nhận thanh toán</a>
+
+                        @* appending modal div here *@
+                        @* Make sure to put this partial tag inside this td block, otherwise it can cause layout related problem*@
+                        @await Html.PartialAsync("/Views/AdminOperation/_OrderDetailModal.cshtml", new OrderDetailModelDTO { DivId = order.Id.ToString(), OrderDetail = order.OderDetail })
+                    </td>
+
+                </tr>
+
+            }
+        </table>
+
+    }
+    else
+    {
+        <h5>Hiện không có đơn hàng nào cần xử lý !
+        </h5>
+    }
+
+
+</div>

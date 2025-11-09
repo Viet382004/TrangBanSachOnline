@@ -17,8 +17,10 @@ namespace TrangBanSachOnline.Data
         public DbSet<TrangBanSachOnline.Models.OrderStatus> OrderStatues { get; set; }
         public DbSet<TrangBanSachOnline.Models.CartDetail> CartDetails { get; set;}
         public DbSet<TrangBanSachOnline.Models.ShoppingCart> ShoppingCarts { get; set;}
-        
+        public DbSet<TrangBanSachOnline.Models.Stock> Stocks { get; set;
 
 
-    }
+
+        }
+}
 }
