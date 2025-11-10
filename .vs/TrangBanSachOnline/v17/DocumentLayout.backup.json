@@ -3,8 +3,92 @@
   "WorkspaceRootPath": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\repositories\\genrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\repositories\\genrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\views\\genre\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\views\\genre\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\views\\genre\\updategenre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\views\\genre\\updategenre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\views\\genre\\addgenre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\views\\genre\\addgenre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\views\\shared\\_notification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\views\\shared\\_notification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\models\\dtos\\genredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\models\\dtos\\genredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\controllers\\adminoperationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\controllers\\adminoperationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\views\\cart\\getusercart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\views\\cart\\getusercart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\repositories\\stockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\repositories\\stockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\repositories\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\repositories\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\views\\stock\\manangestock.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\views\\stock\\manangestock.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\views\\stock\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\views\\stock\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\models\\dtos\\stockdisplaymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,20 +99,12 @@
       "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\models\\dtos\\stockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Data\\Migrations\\20251109164503_add-stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TrangBanSachOnline\\Data\\Migrations\\20251109164503_add-stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|d:\\\u0111\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - htttt\\trangbansachonline\\trangbansachonline\\data\\migrations\\20251109164503_add-stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF63691-B310-4F73-B9A0-03B450ECEC46}|TrangBanSachOnline\\TrangBanSachOnline.csproj|solutionrelative:trangbansachonline\\data\\migrations\\20251109164503_add-stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,99 +114,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 387,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StockRepository.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Repositories\\StockRepository.cs",
-              "RelativeDocumentMoniker": "TrangBanSachOnline\\Repositories\\StockRepository.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Repositories\\StockRepository.cs",
-              "RelativeToolTip": "TrangBanSachOnline\\Repositories\\StockRepository.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAIA0wBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T16:50:16.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StockDisplayModel.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\DTOs\\StockDisplayModel.cs",
-              "RelativeDocumentMoniker": "TrangBanSachOnline\\Models\\DTOs\\StockDisplayModel.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\DTOs\\StockDisplayModel.cs",
-              "RelativeToolTip": "TrangBanSachOnline\\Models\\DTOs\\StockDisplayModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T16:48:19.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StockDTO.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\DTOs\\StockDTO.cs",
-              "RelativeDocumentMoniker": "TrangBanSachOnline\\Models\\DTOs\\StockDTO.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\DTOs\\StockDTO.cs",
-              "RelativeToolTip": "TrangBanSachOnline\\Models\\DTOs\\StockDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T16:45:52.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20251109164503_add-stock.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Data\\Migrations\\20251109164503_add-stock.cs",
-              "RelativeDocumentMoniker": "TrangBanSachOnline\\Data\\Migrations\\20251109164503_add-stock.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Data\\Migrations\\20251109164503_add-stock.cs",
-              "RelativeToolTip": "TrangBanSachOnline\\Data\\Migrations\\20251109164503_add-stock.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T16:45:03.754Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "TrangBanSachOnline\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "TrangBanSachOnline\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAD4vxoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T16:43:55.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Book.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "TrangBanSachOnline\\Models\\Book.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\Book.cs",
-              "RelativeToolTip": "TrangBanSachOnline\\Models\\Book.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA3wBsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T16:39:23.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Stock.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\Stock.cs",
-              "RelativeDocumentMoniker": "TrangBanSachOnline\\Models\\Stock.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\Stock.cs",
-              "RelativeToolTip": "TrangBanSachOnline\\Models\\Stock.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T16:38:56.986Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -142,6 +127,332 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpdateGenre.cshtml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Genre\\UpdateGenre.cshtml",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Views\\Genre\\UpdateGenre.cshtml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Genre\\UpdateGenre.cshtml",
+              "RelativeToolTip": "TrangBanSachOnline\\Views\\Genre\\UpdateGenre.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T16:38:56.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddGenre.cshtml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Genre\\AddGenre.cshtml",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Views\\Genre\\AddGenre.cshtml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Genre\\AddGenre.cshtml",
+              "RelativeToolTip": "TrangBanSachOnline\\Views\\Genre\\AddGenre.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T16:28:37.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Genre\\Index.cshtml",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Views\\Genre\\Index.cshtml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Genre\\Index.cshtml",
+              "RelativeToolTip": "TrangBanSachOnline\\Views\\Genre\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T16:13:45.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GenreDTO.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\DTOs\\GenreDTO.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Models\\DTOs\\GenreDTO.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\DTOs\\GenreDTO.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Models\\DTOs\\GenreDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T15:22:29.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenreController.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Controllers\\GenreController.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Controllers\\GenreController.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Controllers\\GenreController.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Controllers\\GenreController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAcwDMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T15:08:42.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GenreRepository.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Repositories\\GenreRepository.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Repositories\\GenreRepository.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Repositories\\GenreRepository.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Repositories\\GenreRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T14:45:37.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminOperationController.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Controllers\\AdminOperationController.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Controllers\\AdminOperationController.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Controllers\\AdminOperationController.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Controllers\\AdminOperationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T14:17:59.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetUserCart.cshtml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Cart\\GetUserCart.cshtml",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Views\\Cart\\GetUserCart.cshtml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Cart\\GetUserCart.cshtml",
+              "RelativeToolTip": "TrangBanSachOnline\\Views\\Cart\\GetUserCart.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T04:39:36.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CartRepository.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Repositories\\CartRepository.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Repositories\\CartRepository.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Repositories\\CartRepository.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Repositories\\CartRepository.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAkwLkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T04:31:31.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TrangBanSachOnline\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T04:20:19.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HomeRepository.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Repositories\\HomeRepository.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Repositories\\HomeRepository.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Repositories\\HomeRepository.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Repositories\\HomeRepository.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwCcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T04:16:15.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Notification.cshtml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Shared\\_Notification.cshtml",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Views\\Shared\\_Notification.cshtml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Shared\\_Notification.cshtml",
+              "RelativeToolTip": "TrangBanSachOnline\\Views\\Shared\\_Notification.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T04:13:01.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ManangeStock.cshtml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Stock\\ManangeStock.cshtml",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Views\\Stock\\ManangeStock.cshtml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Stock\\ManangeStock.cshtml",
+              "RelativeToolTip": "TrangBanSachOnline\\Views\\Stock\\ManangeStock.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T03:38:56.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Program.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Program.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Program.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwBsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T03:30:47.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TrangBanSachOnline\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAkwDkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T03:28:08.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Stock\\Index.cshtml",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Views\\Stock\\Index.cshtml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Views\\Stock\\Index.cshtml",
+              "RelativeToolTip": "TrangBanSachOnline\\Views\\Stock\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T01:52:02.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T01:47:15.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Controllers\\CartController.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Controllers\\CartController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T01:47:12.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StockController.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Controllers\\StockController.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Controllers\\StockController.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Controllers\\StockController.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Controllers\\StockController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T01:45:13.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StockRepository.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Repositories\\StockRepository.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Repositories\\StockRepository.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Repositories\\StockRepository.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Repositories\\StockRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAD4vxgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T16:50:16.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "StockDisplayModel.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\DTOs\\StockDisplayModel.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Models\\DTOs\\StockDisplayModel.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\DTOs\\StockDisplayModel.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Models\\DTOs\\StockDisplayModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T16:48:19.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "StockDTO.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\DTOs\\StockDTO.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Models\\DTOs\\StockDTO.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\DTOs\\StockDTO.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Models\\DTOs\\StockDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T16:45:52.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20251109164503_add-stock.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Data\\Migrations\\20251109164503_add-stock.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Data\\Migrations\\20251109164503_add-stock.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Data\\Migrations\\20251109164503_add-stock.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Data\\Migrations\\20251109164503_add-stock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T16:45:03.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAawBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T16:43:55.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Models\\Book.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\Book.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Models\\Book.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwB4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T16:39:23.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Stock.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\Stock.cs",
+              "RelativeDocumentMoniker": "TrangBanSachOnline\\Models\\Stock.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n chuy\u00EAn ngh\u00E0nh - HTTTT\\TrangBanSachOnline\\TrangBanSachOnline\\Models\\Stock.cs",
+              "RelativeToolTip": "TrangBanSachOnline\\Models\\Stock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T16:38:56.986Z"
             }
           ]
         },

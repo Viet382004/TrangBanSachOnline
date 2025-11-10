@@ -27,6 +27,8 @@ namespace TrangBanSachOnline.Repositories
             sTerm = sTerm.ToLower();
             IEnumerable<Book> books = await (from b in _db.Books
                          join g in _db.Genres on b.GenreId equals g.Id
+                         join s in _db.Stocks on b.Id equals s.BookId into bs
+                         from stock in bs.DefaultIfEmpty()
                          where string.IsNullOrEmpty(sTerm) || (b != null && b.BookName.ToLower().Contains(sTerm))
                          select new Book
                          {
@@ -36,7 +38,8 @@ namespace TrangBanSachOnline.Repositories
                              Price = b.Price,
                              Image = b.Image,
                              GenreId = b.GenreId,
-                             GenreName = g.GenreName
+                             GenreName = g.GenreName,
+                             Quantity = stock != null ? stock.Quantity : 0
                          }
                          ).ToListAsync();
             if (genreId > 0)

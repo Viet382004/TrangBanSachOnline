@@ -37,11 +37,12 @@ public class AdminOperationController : Controller
         var order = await _userOrderRepository.GetOrderById(orderId);
         if (order == null)
         {
-            throw new InvalidOperationException($"Order with id:{orderId} does not found.");
+            throw new InvalidOperationException($"Không tìm thấy đơn hàng :{orderId}.");
         }
         var orderStatusList = (await _userOrderRepository.GetOrderStatuses()).Select(orderStatus =>
         {
-            return new SelectListItem { Value = orderStatus.Id.ToString(), Text = orderStatus.StatusName, Selected = order.OderStatusId == orderStatus.Id };
+            return new SelectListItem { Value = orderStatus.Id.ToString(), Text = orderStatus.StatusName, 
+                Selected = order.OderStatusId == orderStatus.Id };
         });
         var data = new UpdateOrderStatusModel
         {
@@ -61,7 +62,8 @@ public class AdminOperationController : Controller
             {
                 data.OrderStatusList = (await _userOrderRepository.GetOrderStatuses()).Select(orderStatus =>
                 {
-                    return new SelectListItem { Value = orderStatus.Id.ToString(), Text = orderStatus.StatusName, Selected = orderStatus.Id == data.OrderStatusId };
+                    return new SelectListItem { Value = orderStatus.Id.ToString(), 
+                        Text = orderStatus.StatusName, Selected = orderStatus.Id == data.OrderStatusId };
                 });
 
                 return View(data);

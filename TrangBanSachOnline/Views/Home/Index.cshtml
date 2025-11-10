@@ -57,11 +57,22 @@
                     <p class="card-text mb-3 flex-grow-1">
                         <b>Thể loại:</b> @book.GenreName <br>
                         <b>Tác giả:</b> @book.AuthorName<br>
-                        <b>Giá:</b> @book.Price.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))
+                        <b>Giá:</b> @book.Price.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))<br />
+                        <b>Số lượng:</b> @book.Quantity
 
                     </p>
-
-                    <button type="button" onclick="add(@book.Id)" class="btn btn-primary mt-auto w-100">Thêm vào giỏ hàng</button>
+                    @if (book.Quantity > 0)
+                    {
+                        <button type="button" onclick="add(@book.Id)" class="btn btn-primary mt-auto w-100">
+                            Thêm vào giỏ hàng
+                        </button>
+                    }
+                    else
+                    {
+                        <span style="border: 1px solid;padding: 5px 8px;color: red;border-radius: 5px;">
+                            Hết hàng
+                        </span>
+                    }
                 </div>
             </div>
         }

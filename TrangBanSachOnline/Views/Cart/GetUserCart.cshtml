@@ -48,10 +48,21 @@
                                 <td>@item.Quantity</td>
                                 <td class="fw-bold text-success">@String.Format("{0:N0}", item.Book.Price * item.Quantity) ₫</td>
                                 <td>
-                                    <div class="btn-group" role="group">
-                                        <a class="btn btn-outline-success btn-sm px-3 fw-bold" href="/Cart/AddItem?bookId=@item.BookId&&redirect=1">+</a>
+                                    @*Nút tăng giảm số lượng sẽ ẩn nếu trong kho không đủ số lượng sản phẩm*@
+                                    @if (item.Quantity < item.Book.Stock.Quantity)
+                                    {
+                                        <a class="btn btn-outline-success btn-sm px-3 fw-bold" 
+                                        href="/Cart/AddItem?bookId=@item.BookId&&redirect=1">+</a>
+                                    }
+                                    else
+                                    {
+                                        <span style="border: 1px solid;padding: 8px 8px ;color:red;border-radius:5px;margin-right:4px">
+                                            Hết hàng
+                                        </span>
+                                    }
+                                    @**@
                                         <a class="btn btn-outline-danger btn-sm px-3 fw-bold" href="/Cart/RemoveItem?bookId=@item.BookId">-</a>
-                                    </div>
+                                   
                                 </td>
                             </tr>
                             stt++;
