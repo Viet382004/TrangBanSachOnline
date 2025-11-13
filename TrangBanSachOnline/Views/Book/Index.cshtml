@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Book>
+@{
+    //Layout = "_AdminLayout";
+}
+
+<h2>Quản lý sách</h2>
+
+<a asp-action="AddBook" asp-controller="Book" class="btn btn-primary">Thêm mới</a>
+
+@if (Model?.Count() > 0)
+{
+    <table class="table table-striped my-2">
+        <tr>
+            <th>Ảnh</th>
+            <th>Tên sách</th>
+            <th>Tác giả</th>
+            <th>Thể loại</th>
+            <th>Giá</th>
+            <th>Hành động</th>
+        </tr>
+
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>
+                    @if (string.IsNullOrWhiteSpace(book.Image))
+                    {
+                        <img src="/Images/NoImage.png" style="width:80px;height:100px" alt="book image" />
+                    }
+                    else
+                    {
+                        <img src="/images/@book.Image" style="width:80px;height:100px" alt="book image" />
+                    }
+                </td>
+                <td>@book.BookName</td>
+                <td>@book.AuthorName</td>
+                <td>@book.Genre.GenreName</td>
+                <td>@book.Price</td>
+                <td>
+                    <a asp-action="UpdateBook" asp-controller="Book" asp-route-id="@book.Id" class="btn btn-success">Chỉnh sửa</a>
+                    <a asp-action="DeleteBook" asp-controller="Book" asp-route-id="@book.Id" class="btn btn-danger" onclick="return window.confirm('Bạn có chắc muốn xóa sản phẩm không ?')">Xóa</a>
+                </td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <h3>Hiện không có sản phẩm nào !</h3>
+}

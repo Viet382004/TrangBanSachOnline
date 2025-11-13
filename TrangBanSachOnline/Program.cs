@@ -1,5 +1,6 @@
 using BookShoppingCartMvcUI;
 using BookShoppingCartMvcUI.Repositories;
+using BookShoppingCartMvcUI.Shared;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using NuGet.Protocol.Core.Types;
@@ -26,6 +27,8 @@ builder.Services.AddTransient<ICartRepository, CartRepository>();
 builder.Services.AddTransient<IUserOrderRepository, UserOrderRepository>();
 builder.Services.AddTransient<IStockRepository, StockRepository>();
 builder.Services.AddTransient<IGenreRepository, GenreRepository>();
+builder.Services.AddTransient<IBookRepository, BookRepository>();
+builder.Services.AddTransient<IFileService, FileService>();
 
 var app = builder.Build();
 // Uncomment it when you run the project first time, It will registered an admin
