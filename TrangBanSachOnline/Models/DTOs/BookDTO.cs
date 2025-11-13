@@ -13,7 +13,7 @@ namespace TrangBanSachOnline.Models.DTOs
         [MaxLength(100)]
         public string? AuthorName { get; set; }
         [Required]
-        public decimal Price { get; set; }
+        public double Price { get; set; }
         public string? Image { get; set; }
         [Required]
         public int GenreId { get; set; }

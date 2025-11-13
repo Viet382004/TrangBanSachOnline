@@ -1,5 +1,6 @@
 wwwroot\css\bootstrap.min.css
 wwwroot\favicon.ico
+wwwroot\Images\6b07b96c-0593-4ae6-b1f2-877cd482d14c.jpg
 wwwroot\Images\Empty_Cart.jpg
 wwwroot\Images\NoImage.png
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
